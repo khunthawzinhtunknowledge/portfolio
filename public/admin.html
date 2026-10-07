@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - Portfolio</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="admin-wrap">
+
+  <div id="gate" class="gate">
+    <h1>Admin access</h1>
+    <p>This area is private. Enter the admin password to edit the site.</p>
+    <div class="field">
+      <input type="password" id="pw" placeholder="Admin password" autocomplete="current-password">
+    </div>
+    <button id="unlock">Unlock</button>
+    <div class="error" id="gate-error"></div>
+  </div>
+
+  <div id="editor" style="display:none">
+    <div class="admin-bar">
+      <h1>Site editor</h1>
+      <div>
+        <button class="ghost small" id="view-site">View site</button>
+        <button class="ghost small" id="lock">Lock</button>
+      </div>
+    </div>
+    <div id="sections"></div>
+    <div class="okmsg" id="save-msg"></div>
+  </div>
+
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
