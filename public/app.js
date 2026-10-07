@@ -1,7 +1,7 @@
 const DEFAULTS = {
   profile: {
     name: "Khun Thaw Zin Htun",
-    title: "IT Infrastructure Engineer",
+    title: "IT Infrastructure Specialist",
     tagline: "I build my own tools and take on client work.",
     location: "Yangon, Myanmar",
     email: "hello@example.com",
@@ -10,17 +10,21 @@ const DEFAULTS = {
   },
   about: {
     heading: "About",
-    body: "I work on infrastructure and automation. My days used to be spent in a NOC keeping systems up. Now I build my own tools and take on client work."
+    body: "I work in IT infrastructure. I spent my working years in a NOC, keeping systems up and automating the repetitive parts. Monitoring, ticketing, SLA reports.\n\nNow I build software a different way. I design the tool, direct AI assistants to build it, test every part myself, and ship it. This site and the Android app in my projects were both built that way.\n\nI take on infrastructure and automation work."
   },
   skills: {
     categories: [
       {
         name: "Infrastructure",
-        items: ["Python", "PowerShell", "Windows infrastructure", "NOC monitoring", "Network diagnostics"]
+        items: ["NOC monitoring", "Windows infrastructure", "Network diagnostics", "Redmine ticketing"]
       },
       {
-        name: "Platforms",
-        items: ["Cloudflare (Tunnels, Pages, Workers, D1)", "MCP servers", "Android app builds", "n8n automation"]
+        name: "Automation",
+        items: ["Python", "PowerShell", "n8n workflows", "Excel pipelines"]
+      },
+      {
+        name: "AI-assisted development",
+        items: ["Directing AI coding agents", "Cloudflare (Tunnels, Pages, Workers, D1)", "MCP servers", "Shipping Android apps"]
       }
     ]
   },
