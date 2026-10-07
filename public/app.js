@@ -1,7 +1,7 @@
 const DEFAULTS = {
   profile: {
     name: "Khun Thaw Zin Htun",
-    title: "IT Infrastructure Specialist",
+    title: "IT Support Specialist",
     tagline: "I build my own tools and take on client work.",
     location: "Yangon, Myanmar",
     email: "hello@example.com",
@@ -10,21 +10,21 @@ const DEFAULTS = {
   },
   about: {
     heading: "About",
-    body: "I work in IT infrastructure. I spent my working years in a NOC, keeping systems up and automating the repetitive parts. Monitoring, ticketing, SLA reports.\n\nNow I build software a different way. I design the tool, direct AI assistants to build it, test every part myself, and ship it. This site and the Android app in my projects were both built that way.\n\nI take on infrastructure and automation work."
+    body: "I spent two years as an IT help desk technician at a systems integrator. Level 1 and Level 2 support, troubleshooting devices, talking to vendors. Firewalls, switches, routers, CCTV, VMware servers, Active Directory.\n\nOn my own I took on bigger things. I upgraded our Redmine ticketing system myself and migrated every ticket without losing one. I rebuilt our working hour management system into a much better version.\n\nNow I build software the same way I fixed systems. I design the tool, direct AI assistants to build it, test every part myself, and ship it. This site and the Android app in my projects were both built that way.\n\nI take on IT support and automation work."
   },
   skills: {
     categories: [
       {
-        name: "Infrastructure",
-        items: ["NOC monitoring", "Windows infrastructure", "Network diagnostics", "Redmine ticketing"]
+        name: "IT Support",
+        items: ["Help desk L1 and L2", "Device troubleshooting", "Vendor coordination", "Redmine ticketing"]
       },
       {
-        name: "Automation",
-        items: ["Python", "PowerShell", "n8n workflows", "Excel pipelines"]
+        name: "Infrastructure",
+        items: ["Firewalls, switches, routers", "CCTV systems", "VMware ESXi", "Virtual servers", "Active Directory"]
       },
       {
         name: "AI-assisted development",
-        items: ["Directing AI coding agents", "Cloudflare (Tunnels, Pages, Workers, D1)", "MCP servers", "Shipping Android apps"]
+        items: ["Directing AI coding agents", "Python and PowerShell automation", "Cloudflare (Tunnels, Pages, Workers, D1)", "MCP servers", "Shipping Android apps"]
       }
     ]
   },
@@ -42,32 +42,34 @@ const DEFAULTS = {
       link: ""
     },
     {
-      title: "SLA Tracker",
-      description: "A tool from my time in infrastructure support. It reads support tickets, checks them against response targets, and flags the ones about to break. No more surprises in the morning report.",
-      tech: ["Python", "Redmine", "Automation"],
+      title: "Redmine Upgrade",
+      description: "Upgraded the company Redmine ticketing system on my own. Migrated every ticket and record to the new version without losing anything.",
+      tech: ["Redmine", "Data migration"],
       link: ""
     },
     {
-      title: "Hours Exporter",
-      description: "Another one from support days. It pulls logged hours out of tickets and builds the weekly timesheet. A chore that took an afternoon now takes one click.",
-      tech: ["Python", "PowerShell", "Excel"],
+      title: "Working Hours Rebuild",
+      description: "Took the company working hour management system and rebuilt it into a much better version for staff to track their hours.",
+      tech: ["PHP", "Redesign"],
       link: ""
     }
   ],
   experience: [
     {
-      role: "IT Service Technician, Infrastructure and NOC",
-      org: "",
-      period: "Until October 2026",
+      role: "IT Help Desk Service Technician",
+      org: "Systems integrator",
+      period: "Two years, until October 2026",
       points: [
-        "Ran monitoring and ticketing for company infrastructure.",
-        "Built automation for SLA tracking and timesheets."
+        "Level 1 and Level 2 support, troubleshooting IT devices, vendor communications.",
+        "Upgraded the Redmine ticketing system alone and migrated all data without loss.",
+        "Rebuilt the working hour management system into a much better version.",
+        "Hands-on with firewalls, switches, routers, CCTV, VMware ESXi, and Active Directory."
       ]
     }
   ],
   contact: {
     heading: "Contact",
-    text: "I am currently open to infrastructure and automation work. The fastest way to reach me is email.",
+    text: "I am currently open to IT support and automation work. The fastest way to reach me is email.",
     email: "hello@example.com"
   }
 };
