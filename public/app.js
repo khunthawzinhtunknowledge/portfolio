@@ -2,75 +2,90 @@ const DEFAULTS = {
   profile: {
     name: "Khun Thaw Zin Htun",
     title: "IT Support Specialist",
-    tagline: "I build my own tools and take on client work.",
+    tagline: "IT support and automation for small businesses.",
     location: "Yangon, Myanmar",
-    email: "hello@example.com",
+    email: "khunthawzinhtun.workspace@gmail.com",
     github: "",
     telegram: ""
   },
   about: {
     heading: "About",
-    body: "I spent two years as an IT help desk technician at a systems integrator. Level 1 and Level 2 support, troubleshooting devices, talking to vendors. Firewalls, switches, routers, CCTV, VMware servers, Active Directory.\n\nOn my own I took on bigger things. I upgraded our Redmine ticketing system myself and migrated every ticket without losing one. I rebuilt our working hour management system into a much better version.\n\nNow I build software the same way I fixed systems. I design the tool, direct AI assistants to build it, test every part myself, and ship it. This site and the Android app in my projects were both built that way.\n\nI take on IT support and automation work."
+    body: "I am an IT support specialist. From 2024 to 2026 I worked as a help desk and service technician at a systems integrator, handling 4,000 tickets across L1, L2, and L3.\n\nMy best work was self-directed. I migrated the company Redmine from version 4 to 6, moving it off CentOS 7 onto a new CentOS 10 server with 4 hours of downtime and zero data loss. I rebuilt the working hour management system into a properly structured app with new features.\n\nNow I work for myself. IT support for small businesses, automation that removes busywork, and AI-assisted builds. I even build portfolio sites like this one."
   },
   skills: {
     categories: [
       {
         name: "IT Support",
-        items: ["Help desk L1 and L2", "Device troubleshooting", "Vendor coordination", "Redmine ticketing"]
+        items: ["Help desk L1, L2, L3", "Hardware and software troubleshooting", "Vendor coordination", "Ticketing systems (Redmine)"]
       },
       {
         name: "Infrastructure",
-        items: ["Firewalls, switches, routers", "CCTV systems", "VMware ESXi", "Virtual servers", "Active Directory"]
+        items: ["FortiGate firewalls and routers", "Cisco switches", "Aruba and UniFi wireless", "HIKVISION NVR and CCTV", "Dell servers", "VMware ESXi (6 hosts, 30 VMs)"]
       },
       {
-        name: "AI-assisted development",
-        items: ["Directing AI coding agents", "Python and PowerShell automation", "Cloudflare (Tunnels, Pages, Workers, D1)", "MCP servers", "Shipping Android apps"]
+        name: "Builds and automation",
+        items: ["AI-assisted development", "Python and PowerShell", "Cloudflare (Tunnels, Pages, D1)", "Portfolio and business sites"]
       }
     ]
   },
   projects: [
-    {
-      title: "Veil Reader",
-      description: "A private Android reader for manga and manhwa. History, bookmarks, and reading progress stay on the phone and nowhere else. Tracker blocking, HTTPS-only browsing, and volume keys turn the pages.",
-      tech: ["Android", "Kotlin", "Privacy"],
-      link: ""
-    },
-    {
-      title: "Nazarick Bridge",
-      description: "My own server that lets AI assistants run tasks on my Windows machine. A local daemon does the work, a Cloudflare tunnel carries it out, and a health check proves it is alive.",
-      tech: ["Python", "MCP", "Cloudflare Tunnel"],
-      link: ""
-    },
-    {
-      title: "Redmine Upgrade",
-      description: "Upgraded the company Redmine ticketing system on my own. Migrated every ticket and record to the new version without losing anything.",
-      tech: ["Redmine", "Data migration"],
-      link: ""
-    },
-    {
-      title: "Working Hours Rebuild",
-      description: "Took the company working hour management system and rebuilt it into a much better version for staff to track their hours.",
-      tech: ["PHP", "Redesign"],
-      link: ""
-    }
+      {
+          "title": "Redmine Migration",
+          "description": "Our ticketing system ran Redmine 4 on CentOS 7, which the latest Redmine no longer supports. I set up a new CentOS 10 server, installed Redmine 6, and migrated every ticket and record. 4 hours of downtime, zero data loss.",
+          "tech": [
+              "Redmine",
+              "CentOS",
+              "Data migration"
+          ],
+          "link": ""
+      },
+      {
+          "title": "Working Hours Rebuild",
+          "description": "The old working hour system was unstructured and hard to use. I rebuilt it with a proper structure and additional features for the whole staff.",
+          "tech": [
+              "PHP",
+              "Web app"
+          ],
+          "link": ""
+      },
+      {
+          "title": "Veil Reader",
+          "description": "A private Android reader for manga and manhwa. History, bookmarks, and reading progress stay on the phone and nowhere else. Tracker blocking, HTTPS-only browsing, and volume keys turn the pages.",
+          "tech": [
+              "Android",
+              "Kotlin",
+              "Privacy"
+          ],
+          "link": ""
+      },
+      {
+          "title": "Nazarick Bridge",
+          "description": "My own server that lets AI assistants run tasks on my Windows machine. A local daemon does the work, a Cloudflare tunnel carries it out, and a health check proves it is alive.",
+          "tech": [
+              "Python",
+              "MCP",
+              "Cloudflare Tunnel"
+          ],
+          "link": ""
+      }
   ],
   experience: [
     {
-      role: "IT Help Desk Service Technician",
+      role: "IT Help Desk and Service Technician",
       org: "Systems integrator",
-      period: "Two years, until October 2026",
+      period: "2024 - 2026",
       points: [
-        "Level 1 and Level 2 support, troubleshooting IT devices, vendor communications.",
-        "Upgraded the Redmine ticketing system alone and migrated all data without loss.",
-        "Rebuilt the working hour management system into a much better version.",
-        "Hands-on with firewalls, switches, routers, CCTV, VMware ESXi, and Active Directory."
+        "Handled 4,000 support tickets across L1, L2, and L3 over two years.",
+        "Migrated Redmine 4 on CentOS 7 to Redmine 6 on CentOS 10 with 4 hours of downtime and zero data loss.",
+        "Rebuilt the working hour management system with proper structure and new features.",
+        "Managed FortiGate firewalls and routers, Cisco switches, Aruba and UniFi wireless, HIKVISION CCTV, and 6 ESXi hosts running 30 VMs."
       ]
     }
   ],
   contact: {
     heading: "Contact",
-    text: "I am currently open to IT support and automation work. The fastest way to reach me is email.",
-    email: "hello@example.com"
+    text: "I do IT support for small businesses, automation that removes busywork, and portfolio sites like this one. Email is the fastest way to reach me.",
+    email: "khunthawzinhtun.workspace@gmail.com"
   }
 };
 
