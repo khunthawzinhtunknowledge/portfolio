@@ -1,8 +1,8 @@
 const DEFAULTS = {
   profile: {
     name: "Khun Thaw Zin Htun",
-    title: "IT Support Specialist",
-    tagline: "IT support and automation for small businesses.",
+    title: "IT Infrastructure Engineer",
+    tagline: "Infrastructure, automation, and AI tooling for small businesses.",
     location: "Yangon, Myanmar",
     email: "khunthawzinhtun.workspace@gmail.com",
     github: "",
@@ -10,66 +10,72 @@ const DEFAULTS = {
   },
   about: {
     heading: "About",
-    body: "I am an IT support specialist. From 2024 to 2026 I worked as a help desk and service technician at a systems integrator, handling 4,000 tickets across L1, L2, and L3.\n\nMy best work was self-directed. I migrated the company Redmine from version 4 to 6, moving it off CentOS 7 onto a new CentOS 10 server with 4 hours of downtime and zero data loss. I rebuilt the working hour management system into a properly structured app with new features.\n\nNow I work for myself. IT support for small businesses, automation that removes busywork, and AI-assisted builds. I even build portfolio sites like this one."
+    body: "I am an IT infrastructure engineer. From 2024 to 2026 I worked as a help desk and service technician at a systems integrator, handling 4,000 tickets across L1, L2, and L3. The work that defines me is what I built.\n\nI migrated the company Redmine from version 4 to 6 across servers with 4 hours of downtime and zero data loss. I built a working hours platform in PHP with role-based access, analytics, and Docker deployment. I run a production monitoring stack on Grafana and Loki. I build AI agents that manage infrastructure, including one that heals network faults on its own.\n\nNow I work for myself. Infrastructure and automation for small businesses, AI-assisted builds, and portfolio sites like this one."
   },
   skills: {
     categories: [
       {
-        name: "IT Support",
-        items: ["Help desk L1, L2, L3", "Hardware and software troubleshooting", "Vendor coordination", "Ticketing systems (Redmine)"]
-      },
-      {
         name: "Infrastructure",
-        items: ["FortiGate firewalls and routers", "Cisco switches", "Aruba and UniFi wireless", "HIKVISION NVR and CCTV", "Dell servers", "VMware ESXi (6 hosts, 30 VMs)"]
+        items: ["FortiGate firewalls and routers", "Cisco switches", "Aruba, UniFi and Meraki wireless", "HIKVISION NVR and CCTV", "Dell servers", "VMware ESXi (6 hosts, 30 VMs)"]
       },
       {
-        name: "Builds and automation",
-        items: ["AI-assisted development", "Python and PowerShell", "Cloudflare (Tunnels, Pages, D1)", "Portfolio and business sites"]
+        name: "Platforms and DevOps",
+        items: ["Docker and Compose", "Grafana, Loki and Promtail", "PHP and MariaDB", "n8n automation", "Nginx reverse proxy", "Cloudflare (Tunnels, Pages, D1)"]
+      },
+      {
+        name: "AI-assisted development",
+        items: ["AI agents for infrastructure", "MCP servers", "Python and PowerShell", "Shipping Android apps", "Portfolio and business sites"]
       }
     ]
   },
   projects: [
-      {
-          "title": "Redmine Migration",
-          "description": "Our ticketing system ran Redmine 4 on CentOS 7, which the latest Redmine no longer supports. I set up a new CentOS 10 server, installed Redmine 6, and migrated every ticket and record. 4 hours of downtime, zero data loss.",
-          "tech": [
-              "Redmine",
-              "CentOS",
-              "Data migration"
-          ],
-          "link": ""
-      },
-      {
-          "title": "Working Hours Rebuild",
-          "description": "The old working hour system was unstructured and hard to use. I rebuilt it with a proper structure and additional features for the whole staff.",
-          "tech": [
-              "PHP",
-              "Web app"
-          ],
-          "link": ""
-      },
-      {
-          "title": "Veil Reader",
-          "description": "A private Android reader for manga and manhwa. History, bookmarks, and reading progress stay on the phone and nowhere else. Tracker blocking, HTTPS-only browsing, and volume keys turn the pages.",
-          "tech": [
-              "Android",
-              "Kotlin",
-              "Privacy"
-          ],
-          "link": ""
-      },
-      {
-          "title": "Nazarick Bridge",
-          "description": "My own server that lets AI assistants run tasks on my Windows machine. A local daemon does the work, a Cloudflare tunnel carries it out, and a health check proves it is alive.",
-          "tech": [
-              "Python",
-              "MCP",
-              "Cloudflare Tunnel"
-          ],
-          "link": ""
-      }
+    {
+      title: "Working Hours Platform",
+      description: "A complete working hours and task management platform in PHP. Role-based access for admins, semi-admins, and members, analytics dashboards, audit logging, and Docker deployment. Built for the whole company staff.",
+      tech: ["PHP", "MariaDB", "Docker"],
+      link: ""
+    },
+    {
+      title: "Infrastructure Monitoring",
+      description: "A production monitoring stack on my own domain. Grafana dashboards, Loki log aggregation, and Promtail collectors, all running in Docker with health checks and persistent storage.",
+      tech: ["Grafana", "Loki", "Docker"],
+      link: ""
+    },
+    {
+      title: "Nazarick Bridge",
+      description: "An MCP server daemon that gives AI assistants authenticated remote control over infrastructure servers. System telemetry, remote command execution, and service management, reachable through a Cloudflare tunnel.",
+      tech: ["Python", "MCP", "Cloudflare Tunnel"],
+      link: ""
+    },
+    {
+      title: "Connection Guard",
+      description: "A self-healing network guard. It probes connectivity every 15 seconds, and when the link drops, a tuned model triggers a bounded repair through NetworkManager. Every repair is logged and every action is sandboxed.",
+      tech: ["Python", "systemd", "Machine learning"],
+      link: ""
+    },
+    {
+      title: "Redmine Migration",
+      description: "Our ticketing system ran Redmine 4 on CentOS 7, which the latest Redmine no longer supports. I set up a new CentOS 10 server, installed Redmine 6, and migrated every ticket and record. 4 hours of downtime, zero data loss.",
+      tech: ["Redmine", "CentOS", "Data migration"],
+      link: ""
+    },
+    {
+      title: "Veil Reader",
+      description: "A private Android reader for manga and manhwa. History, bookmarks, and reading progress stay on the phone and nowhere else. Tracker blocking, HTTPS-only browsing, and volume keys turn the pages.",
+      tech: ["Android", "Kotlin", "Privacy"],
+      link: ""
+    }
   ],
   experience: [
+    {
+      role: "Independent IT Engineer",
+      org: "Self-employed",
+      period: "2026 - Present",
+      points: [
+        "Infrastructure and automation for small businesses.",
+        "Production monitoring stacks, AI infrastructure agents, and portfolio sites."
+      ]
+    },
     {
       role: "IT Help Desk and Service Technician",
       org: "Systems integrator",
@@ -77,14 +83,15 @@ const DEFAULTS = {
       points: [
         "Handled 4,000 support tickets across L1, L2, and L3 over two years.",
         "Migrated Redmine 4 on CentOS 7 to Redmine 6 on CentOS 10 with 4 hours of downtime and zero data loss.",
-        "Rebuilt the working hour management system with proper structure and new features.",
-        "Managed FortiGate firewalls and routers, Cisco switches, Aruba and UniFi wireless, HIKVISION CCTV, and 6 ESXi hosts running 30 VMs."
+        "Built the company working hours platform with PHP, role-based access, analytics, and Docker deployment.",
+        "Built the company corporate website.",
+        "Managed FortiGate firewalls and routers, Cisco switches, Aruba, UniFi and Meraki wireless, HIKVISION CCTV, and 6 ESXi hosts running 30 VMs."
       ]
     }
   ],
   contact: {
     heading: "Contact",
-    text: "I do IT support for small businesses, automation that removes busywork, and portfolio sites like this one. Email is the fastest way to reach me.",
+    text: "I do infrastructure and automation for small businesses, AI-assisted builds, and portfolio sites like this one. Email is the fastest way to reach me.",
     email: "khunthawzinhtun.workspace@gmail.com"
   }
 };
